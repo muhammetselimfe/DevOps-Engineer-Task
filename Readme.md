@@ -61,20 +61,20 @@ Docker from the repository.
 
         ```console
         sudo apt-get update
-        sudo apt-get install docker-compose-plugin
+        sudo apt install docker-compose
         ```
 ####  Create the `docker` group and add your user:
 
 #### 1. Create the `docker` group.
 
    ```console
-   $ sudo groupadd docker
+   sudo groupadd docker
    ```
 
 #### 2. Add your user to the `docker` group.
 
    ```console
-   $ sudo usermod -aG docker $USER
+   sudo usermod -aG docker $USER
    ```
 
 ####3. Log out and log back in so that your group membership is re-evaluated
