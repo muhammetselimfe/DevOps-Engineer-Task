@@ -185,3 +185,33 @@ observationSource = """
 
    ![A screenshot showing the External Job ID.](https://github.com/smartcontractkit/documentation/blob/main/public/images/chainlink-nodes/node-operators/job-id.jpg?raw=true)
 
+## Create a request to your node
+
+After you add jobs to your node, you can use the node to fulfill requests. This section shows what a requester does when they send requests to your node. It is also a way to test and make sure that your node is functioning correctly.
+
+1. Open [ATestnetConsumer.sol in Remix](https://remix.ethereum.org/#url=https://docs.chain.link/samples/APIRequests/ATestnetConsumer.sol).
+
+1. Note that `setChainlinkToken(0x779877A7B0D9E8603169DdbD7836e478b4624789)` is configured for _Sepolia_.
+
+1. On the **Compiler** tab, click the **Compile** button for `ATestnetConsumer.sol`.
+
+1. On the **Deploy and Run** tab, configure the following settings:
+
+   - Select _Injected Provider_ as your environment. Make sure your metamask is connected to Sepolia.
+   - Select _ATestnetConsumer_ from the **Contract** menu.
+
+1. Click **Deploy**. MetaMask prompts you to confirm the transaction.
+
+1. Fund the contract by sending LINK to the contract's address. See the [Fund your contract](/resources/fund-your-contract) page for instructions. The address for the `ATestnetConsumer` contract is on the list of your deployed contracts in Remix. You can fund your contract with 1 LINK.
+
+1. After you fund the contract, create a request. Input your operator contract address and the job ID for the `Get > Uint256` job into the `requestEthereumPrice` request method **without dashes**. The job ID is the `externalJobID` parameter, which you can find on your job's definition page in the Node Operators UI.
+
+   ![Screenshot of the requestEthereumPrice function with the oracle address and job ID specified.](https://github.com/smartcontractkit/documentation/blob/main/public/images/chainlink-nodes/node-operators/requestEthereumPrice.jpg?raw=true)
+
+1. Click the **transact** button for the `requestEthereumPrice` function and approve the transaction in Metamask.
+
+1. After the transaction processes, you can see the details for the complete the job run the **Runs** page in the Node Operators UI.
+
+   ![A screenshot of the task link](https://github.com/smartcontractkit/documentation/blob/main/public/images/chainlink-nodes/node-operators/taskList.jpg?raw=true)
+
+1. In Remix, click the `currentPrice` variable to see the current price updated on your consumer contract.
