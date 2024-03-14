@@ -22,7 +22,7 @@ The unofficial packages to uninstall are:
 - `podman-docker`
 
 ```console
-$ for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
+for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
 ```
 #### Install using the `apt` repository
 Before you install Docker Engine for the first time on a new host machine, you
@@ -51,7 +51,7 @@ Docker from the repository.
    To install the latest version, run:
 
    ```console
-   $ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+   sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
    ```
 ## Install the Compose plugin
 
@@ -60,8 +60,8 @@ Docker from the repository.
     * For Ubuntu run:
 
         ```console
-        $ sudo apt-get update
-        $ sudo apt-get install docker-compose-plugin
+        sudo apt-get update
+        sudo apt-get install docker-compose-plugin
         ```
 ## Run the Docker-compose
 #### Be sure you are in .chainlink-sepolia directory
