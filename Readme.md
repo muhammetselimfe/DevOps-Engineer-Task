@@ -230,4 +230,5 @@ password: grafana
 ## Explorer Links
 
 [Oracle smart contract address](https://sepolia.etherscan.io/address/0x912a9151F233Ab0c54fF3b59b328318Bd16193FF)
+
 [Chainlink node account address](https://sepolia.etherscan.io/address/0x147F4d88676466F00c45d35D52baea91b68dc07C)
