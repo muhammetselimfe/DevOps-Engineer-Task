@@ -58,8 +58,8 @@ Append the your user to the docker group to be able to interact with the Docker 
 
 #### Log out and log back in so that your group membership is re-evaluated
 
-## Run the Docker-compose
-Be sure you are in .chainlink-sepolia directory
+# Run the Docker-compose
+Be sure you are in chainlink-sepolia directory
 ```bash
 docker-compose up -d
 ```
