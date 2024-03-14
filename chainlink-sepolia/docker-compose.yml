@@ -9,7 +9,7 @@ services:
     env_file:
       - database.env
     volumes:
-      - /home/selim/.chainlink-sepolia/data:/var/lib/postgresql/data/
+      - /home/test/chainlink-sepolia/data:/var/lib/postgresql/data/
 
   chainlink:
     image: "smartcontract/chainlink:2.8.0"
@@ -19,7 +19,7 @@ services:
       - "6688:6688"
     restart: unless-stopped
     volumes:
-      - /home/selim/.chainlink-sepolia/chainlink-volume:/chainlink/
+      - /home/test/chainlink-sepolia/chainlink-volume:/chainlink/
     command: node -config /chainlink/config.toml -secrets /chainlink/secrets.toml start -a /chainlink/.api
 
   node-exporter:
