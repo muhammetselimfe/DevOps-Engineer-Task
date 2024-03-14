@@ -117,7 +117,7 @@ If you are using a VPS, you can create an [SSH tunnel](https://www.howtogeek.com
 
    ![A screenshot showing Chainlink node whitelisted in Remix.](https://github.com/smartcontractkit/documentation/blob/main/public/images/chainlink-nodes/node-operators/operator-isauthorizedsender.jpg?raw=true)
 
-   ## Add a job to the node
+## Add a job to the node
 
 1. In the Chainlink Operator UI on the **Jobs** tab, click **New Job**.
 2. Paste the job specification from above into the text field.
