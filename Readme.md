@@ -84,3 +84,8 @@ credentials you set up earlier to log in.
 If you are using a VPS, you can create an [SSH tunnel](https://www.howtogeek.com/168145/how-to-use-ssh-tunneling/) to your node for `6688:localhost:6688` to enable connectivity to the GUI. Typically this is done with `ssh -i $KEY $USER@$REMOTE-IP -L 6688:localhost:6688 -N`.
 
 # ETH/USD Price Feed
+## Requirements
+
+- Fund the Ethereum address that your Chainlink node uses. You can find the address in the node Operator GUI under the **Key Management** configuration. The address of the node is the `Regular` type. You can obtain test ETH from several [faucets](/resources/link-token-contracts). For this tutorial to work, you will have to fund the node's Ethereum address with Sepolia ETH. Here is an example:
+
+  ![chainlink node Goerli fund address](/images/key-management.jpg)
