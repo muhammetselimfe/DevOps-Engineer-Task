@@ -116,6 +116,6 @@ If you are using a VPS, you can create an [SSH tunnel](https://www.howtogeek.com
 
 5. If the transaction is successful, a new address displays in the **Deployed Contracts** section.
 
-   ![Screenshot showing the newly deployed contract.](/images/chainlink-nodes/node-operators/operator-deployed.jpg)
+   ![Screenshot showing the newly deployed contract.](https://github.com/smartcontractkit/documentation/blob/main/public/images/chainlink-nodes/node-operators/operator-deployed.jpg?raw=true)
 
 5. Keep note of the Operator contract address. You need it later for your consuming contract.
