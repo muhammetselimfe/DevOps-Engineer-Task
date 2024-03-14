@@ -203,6 +203,8 @@ After you add jobs to your node, you can use the node to fulfill requests. This 
 ## Grafana
 [localhost:3000](http://localhost:3000)
 
+[Dashboard](http://localhost:3000/d/adflx4cb1nt34c/simply-staking-task?orgId=1&from=1710378781844&to=1710400381845)
+
 Username: admin
 
 password: grafana
