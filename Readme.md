@@ -1,9 +1,4 @@
-# Chainlink
-#### Prerequisite
-* Docker
-* Docker-compose
-* Ubuntu 22.04 
-
+# INTERVIEW TASK FOR THE ROLE OF DevOps Engineer
 ## Docker
 #### Uninstall old versions
 
@@ -12,14 +7,6 @@ Before you can install Docker Engine, you need to uninstall any conflicting pack
 Distro maintainers provide unofficial distributions of Docker packages in
 APT. You must uninstall these packages before you can install the official
 version of Docker Engine.
-
-The unofficial packages to uninstall are:
-
-- `docker.io`
-- `docker-compose`
-- `docker-compose-v2`
-- `docker-doc`
-- `podman-docker`
 
 ```console
 for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
@@ -53,9 +40,9 @@ Docker from the repository.
    ```console
    sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
    ```
-## Install the Compose plugin
+## Install the Docker Compose
 
-2. Update the package index, and install the latest version of Docker Compose:
+Update the package index, and install the latest version of Docker Compose:
 
     * For Ubuntu run:
 
