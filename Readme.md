@@ -56,7 +56,7 @@ Append the your user to the docker group to be able to interact with the Docker 
    sudo usermod -aG docker $USER
    ```
 
-####3. Log out and log back in so that your group membership is re-evaluated
+#### Log out and log back in so that your group membership is re-evaluated
 
 ## Run the Docker-compose
 Be sure you are in .chainlink-sepolia directory
