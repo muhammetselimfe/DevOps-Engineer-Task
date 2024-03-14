@@ -46,6 +46,7 @@ Update the package index, and install the latest version of Docker Compose:
 
     ```console
     sudo apt-get update
+    
     sudo apt install docker-compose
     ```
 
