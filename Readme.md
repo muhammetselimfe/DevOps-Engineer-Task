@@ -43,7 +43,7 @@ Docker from the repository.
    ```
 ### Docker Compose
 
-## Update the package index, and install the latest version of Docker Compose:
+#### Update the package index, and install the latest version of Docker Compose:
 
 ```console
 sudo apt-get update
