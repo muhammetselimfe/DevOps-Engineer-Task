@@ -1,5 +1,6 @@
 # INTERVIEW TASK FOR THE ROLE OF DevOps Engineer
-## Docker
+## Installation
+### Docker
 #### Uninstall old versions
 
 Before you can install Docker Engine, you need to uninstall any conflicting packages.
@@ -40,7 +41,7 @@ Docker from the repository.
    ```console
    sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
    ```
-## Install the Docker Compose
+### Docker Compose
 
 ## Update the package index, and install the latest version of Docker Compose:
 
