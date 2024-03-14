@@ -1,0 +1,91 @@
+version: '3'
+
+services:
+  pg_chainlink:
+    image: "postgres"
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+    env_file:
+      - database.env
+    volumes:
+      - /home/selim/.chainlink-sepolia/data:/var/lib/postgresql/data/
+
+  chainlink:
+    image: "smartcontract/chainlink:2.8.0"
+    depends_on:
+      - pg_chainlink
+    ports:
+      - "6688:6688"
+    restart: unless-stopped
+    volumes:
+      - /home/selim/.chainlink-sepolia/chainlink-volume:/chainlink/
+    command: node -config /chainlink/config.toml -secrets /chainlink/secrets.toml start -a /chainlink/.api
+
+  node-exporter:
+    image: prom/node-exporter
+    container_name: node-exporter
+    networks:
+      - localprom
+    ports:
+      - 9100:9100
+    restart: unless-stopped
+
+  alert-manager:
+    image: prom/alertmanager
+    volumes:
+      - "./alertmanager.yml:/alertmanager/alertmanager.yml"
+    networks:
+      - localprom
+    ports:
+      - 9093:9093
+    restart: unless-stopped
+
+  eth-exporter:
+    image: hunterlong/ethexporter
+    container_name: eth-exporter
+    networks:
+      - localprom
+    ports:
+      - 9015:9015
+    restart: unless-stopped
+    environment:
+      - GETH=https://ethereum-sepolia.blockpi.network/v1/rpc/61469a8f09ecf5c88b27801fd89cb75b90ba2468
+    volumes:
+      - "./addresses.txt:/app/addresses.txt"
+
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+    ports:
+      - 9090:9090
+    restart: unless-stopped
+    volumes:
+      - ./prometheus/rules.yml:/etc/prometheus/rules.yml
+      - ./prometheus:/etc/prometheus
+      - prom_data:/prometheus
+    networks:
+      - localprom
+
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    ports:
+      - 3000:3000
+    restart: unless-stopped
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=grafana
+    volumes:
+      - ./grafana:/etc/grafana/provisioning/datasources
+    networks:
+       - localprom
+
+networks:
+  localprom:
+    driver: bridge
+
+volumes:
+  prom_data:

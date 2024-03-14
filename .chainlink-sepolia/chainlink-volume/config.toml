@@ -1,0 +1,17 @@
+[Log]
+Level = 'warn'
+
+[WebServer]
+AllowOrigins = '*'
+SecureCookies = false
+
+[WebServer.TLS]
+HTTPSPort = 0
+
+[[EVM]]
+ChainID = '11155111'
+
+[[EVM.Nodes]]
+Name = 'Sepolia'
+WSURL = 'wss://ethereum-sepolia.blockpi.network/v1/ws/61469a8f09ecf5c88b27801fd89cb75b90ba2468'
+HTTPURL = 'https://ethereum-sepolia.blockpi.network/v1/rpc/61469a8f09ecf5c88b27801fd89cb75b90ba2468'
