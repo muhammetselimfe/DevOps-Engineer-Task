@@ -201,9 +201,9 @@ After you add jobs to your node, you can use the node to fulfill requests. This 
 
 # Credentials and Links
 ## Chainlink
-task@hotmail.com
+Email: task@hotmail.com
 
-simplytaskapi1234
+Password: simplytaskapi1234
 ## Grafana
 [localhost:3000](http://localhost:3000)
 
