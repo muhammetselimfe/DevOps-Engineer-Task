@@ -213,3 +213,14 @@ After you add jobs to your node, you can use the node to fulfill requests. This 
    ![A screenshot of the task link](https://github.com/smartcontractkit/documentation/blob/main/public/images/chainlink-nodes/node-operators/taskList.jpg?raw=true)
 
 1. In Remix, click the `currentPrice` variable to see the current price updated on your consumer contract.
+
+# Credentials and Links
+## Grafana
+localhost:3000![](localhost:3000)
+Username: admin
+password: grafana
+
+## Prometheus
+localhost:9090![](localhost:9090)
+## Alertmanager
+localhost:9093![](localhost:9093)
