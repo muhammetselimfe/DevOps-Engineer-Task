@@ -216,13 +216,13 @@ After you add jobs to your node, you can use the node to fulfill requests. This 
 
 # Credentials and Links
 ## Grafana
-[localhost:3000](localhost:3000)
+[localhost:3000](http://localhost:3000)
 
 Username: admin
 
 password: grafana
 
 ## Prometheus
-[localhost:9090](localhost:9090)
+[localhost:9090](http://localhost:9090)
 ## Alertmanager
-[localhost:9093](localhost:9093)
+[localhost:9093](http://localhost:9093)
