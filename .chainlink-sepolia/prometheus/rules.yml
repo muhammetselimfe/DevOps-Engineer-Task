@@ -1,6 +1,6 @@
 groups:
   - name: eth_alerts
     rules:
-      - alert: EthBalanceGreaterThanZero
+      - alert: EthBalanceLower
         expr: eth_balance < 0.5
         for: 10s

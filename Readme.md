@@ -63,15 +63,9 @@ Docker from the repository.
         sudo apt-get update
         sudo apt install docker-compose
         ```
-####  Create the `docker` group and add your user:
 
-#### 1. Create the `docker` group.
-
-   ```console
-   sudo groupadd docker
-   ```
-
-#### 2. Add your user to the `docker` group.
+#### Add your user to the `docker` group.
+appending the currently logged-in user to the docker group. This is commonly used when you want a user to be able to interact with the Docker daemon without needing to use sudo for every Docker command
 
    ```console
    sudo usermod -aG docker $USER
