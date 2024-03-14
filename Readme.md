@@ -74,7 +74,13 @@ Append the your user to the docker group to be able to interact with the Docker 
 ####3. Log out and log back in so that your group membership is re-evaluated
 
 ## Run the Docker-compose
-#### Be sure you are in .chainlink-sepolia directory
+Be sure you are in .chainlink-sepolia directory
 ```bash
 docker-compose up -d
 ```
+You can now connect to your Chainlink node's UI interface by navigating to [http://localhost:6688](http://localhost:6688). Use the API
+    credentials you set up earlier to log in.
+
+    If you are using a VPS, you can create an [SSH tunnel](https://www.howtogeek.com/168145/how-to-use-ssh-tunneling/) to your node for `6688:localhost:6688` to enable connectivity to the GUI. Typically this is done with `ssh -i $KEY $USER@$REMOTE-IP -L 6688:localhost:6688 -N`.
+
+# ETH/USD Price Feed
