@@ -1,4 +1,4 @@
-##Install Docker
+## Install Docker
 ### Uninstall conflicting packages
 ```bash
 for  pkg  in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do
