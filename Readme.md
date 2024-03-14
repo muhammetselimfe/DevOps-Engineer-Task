@@ -119,3 +119,17 @@ If you are using a VPS, you can create an [SSH tunnel](https://www.howtogeek.com
    ![Screenshot showing the newly deployed contract.](https://github.com/smartcontractkit/documentation/blob/main/public/images/chainlink-nodes/node-operators/operator-deployed.jpg?raw=true)
 
 5. Keep note of the Operator contract address. You need it later for your consuming contract.
+
+### Whitelist your node address in the Operator contract
+
+1. In the Chainlink node GUI, find and copy the address of your chainlink node.
+
+1. In Remix, call the `setAuthorizedSenders` function with the address of your node. Note the function expects an array.
+
+   ![A screenshot showing all of the fields for the deployed contract in Remix.](https://github.com/smartcontractkit/documentation/blob/main/public/images/chainlink-nodes/node-operators/operator-authorizedsenders.jpg?raw=true)
+
+1. Click the `transact` function to run it. Approve the transaction in MetaMask and wait for it to confirm on the blockchain.
+
+1. Call `isAuthorizedSender` function with the address of your node to verify that your chainlink node address can call the operator contract. The function must return `true`.
+
+   ![A screenshot showing Chainlink node whitelisted in Remix.](https://github.com/smartcontractkit/documentation/blob/main/public/images/chainlink-nodes/node-operators/operator-isauthorizedsender.jpg?raw=true)
