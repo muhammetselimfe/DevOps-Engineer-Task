@@ -63,6 +63,22 @@ Docker from the repository.
         sudo apt-get update
         sudo apt-get install docker-compose-plugin
         ```
+####  Create the `docker` group and add your user:
+
+#### 1. Create the `docker` group.
+
+   ```console
+   $ sudo groupadd docker
+   ```
+
+#### 2. Add your user to the `docker` group.
+
+   ```console
+   $ sudo usermod -aG docker $USER
+   ```
+
+####3. Log out and log back in so that your group membership is re-evaluated
+
 ## Run the Docker-compose
 #### Be sure you are in .chainlink-sepolia directory
 ```bash
