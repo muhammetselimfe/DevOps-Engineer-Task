@@ -49,7 +49,7 @@ sudo apt-get update
 sudo apt install docker-compose
 ```
 
-#### Add your user to the `docker` group.
+### Add your user to the `docker` group.
 Append the your user to the docker group to be able to interact with the Docker daemon without needing to use sudo for every Docker command
 
    ```console
