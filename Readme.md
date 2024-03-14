@@ -1,4 +1,5 @@
-#### Prerequisites
+# Chainlink
+#### Prerequisite
 * Docker
 * Docker-compose
 * Ubuntu 22.04 
@@ -62,4 +63,8 @@ Docker from the repository.
         $ sudo apt-get update
         $ sudo apt-get install docker-compose-plugin
         ```
-
+## Run the Docker-compose
+#### Be sure you are in .chainlink-sepolia directory
+```bash
+docker-compose up -d
+```
