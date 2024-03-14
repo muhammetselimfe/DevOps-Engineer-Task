@@ -65,7 +65,7 @@ Docker from the repository.
         ```
 
 #### Add your user to the `docker` group.
-appending the currently logged-in user to the docker group. This is commonly used when you want a user to be able to interact with the Docker daemon without needing to use sudo for every Docker command
+Append the your user to the docker group to be able to interact with the Docker daemon without needing to use sudo for every Docker command
 
    ```console
    sudo usermod -aG docker $USER
