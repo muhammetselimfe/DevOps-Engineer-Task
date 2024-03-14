@@ -63,8 +63,8 @@ Be sure you are in chainlink-sepolia directory
 ```bash
 docker-compose up -d
 ```
-You can now connect to your Chainlink node's UI interface by navigating to [http://localhost:6688](http://localhost:6688). Use the API
-credentials you set up earlier to log in.
+You can now connect to your Chainlink node's UI interface by navigating to [http://localhost:6688](http://localhost:6688). API
+credentials are stored in chainlink-volume/.api.
 
 If you are using a VPS, you can create an [SSH tunnel](https://www.howtogeek.com/168145/how-to-use-ssh-tunneling/) to your node for `6688:localhost:6688` to enable connectivity to the GUI. Typically this is done with `ssh -i $KEY $USER@$REMOTE-IP -L 6688:localhost:6688 -N`.
 
@@ -200,6 +200,10 @@ After you add jobs to your node, you can use the node to fulfill requests. This 
 1. In Remix, click the `currentPrice` variable to see the current price updated on your consumer contract.
 
 # Credentials and Links
+## Chainlink
+task@hotmail.com
+
+simplytaskapi1234
 ## Grafana
 [localhost:3000](http://localhost:3000)
 
