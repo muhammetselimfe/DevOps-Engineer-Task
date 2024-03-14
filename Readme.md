@@ -88,4 +88,4 @@ If you are using a VPS, you can create an [SSH tunnel](https://www.howtogeek.com
 
 - Fund the Ethereum address that your Chainlink node uses. You can find the address in the node Operator GUI under the **Key Management** configuration. The address of the node is the `Regular` type. You can obtain test ETH from several [faucets](/resources/link-token-contracts). For this tutorial to work, you will have to fund the node's Ethereum address with Sepolia ETH. Here is an example:
 
-(public/images/key-management.jpg)
+(/public/images/key-management.jpg)
