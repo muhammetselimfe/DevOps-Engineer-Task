@@ -120,7 +120,7 @@ If you are using a VPS, you can create an [SSH tunnel](https://www.howtogeek.com
    ## Add a job to the node
 
 1. In the Chainlink Operator UI on the **Jobs** tab, click **New Job**.
-1. Paste the job specification from above into the text field.
+2. Paste the job specification from above into the text field.
 
 ```console
 # THIS IS EXAMPLE CODE THAT USES HARDCODED VALUES FOR CLARITY.
@@ -160,11 +160,11 @@ observationSource = """
 """
 
 ```
-7. Replace `YOUR_OPERATOR_CONTRACT_ADDRESS` with the address of your deployed operator contract address from the previous steps.
+3. Replace `YOUR_OPERATOR_CONTRACT_ADDRESS` with the address of your deployed operator contract address from the previous steps.
 
-8. Click **Create Job**. If the node creates the job successfully, a notice with the job number appears.
+4. Click **Create Job**. If the node creates the job successfully, a notice with the job number appears.
 
-9. Click the job number to view the job details. You can also find the job listed on the **Jobs** tab in the Node Operators UI. Save the `externalJobID` value because you will need it later to tell your consumer contract what job ID to request from your node.
+5. Click the job number to view the job details. You can also find the job listed on the **Jobs** tab in the Node Operators UI. Save the `externalJobID` value because you will need it later to tell your consumer contract what job ID to request from your node.
 
    ![A screenshot showing the External Job ID.](https://github.com/smartcontractkit/documentation/blob/main/public/images/chainlink-nodes/node-operators/job-id.jpg?raw=true)
 
