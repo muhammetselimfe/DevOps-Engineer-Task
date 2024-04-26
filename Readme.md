@@ -227,5 +227,5 @@ password: grafana
 
 [Transaction hashes of data request and response](https://sepolia.etherscan.io/tx/0x30a0529ae88d871b7acbf87de6bbada4fc67cfbafad37f6cb445e19659dc9f0e)
 
-## Open Source Documantation Contribution
+## Open Source Documentation Contribution
 I noticed a mising part in the [Chainlink documentation.](https://docs.chain.link/chainlink-nodes/v1/fulfilling-requests#add-a-job-to-the-node) Fixed it and [send a PR](https://github.com/smartcontractkit/documentation/pull/1810)
