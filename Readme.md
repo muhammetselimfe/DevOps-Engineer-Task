@@ -1,5 +1,33 @@
 # INTERVIEW TASK FOR THE ROLE OF DevOps Engineer
-## Installation
+## Introduction
+
+This task goes over some fundamentals of the operating Chainlink nodes and alerting systems:
+- following open source documentation
+- setting up software using Docker, Docker Compose
+- configuring different modules to work with each other,
+- interacting with the blockchain network through transactions
+
+## Aim
+
+Use Chainlink software to provide ETH/USD price data to a new smart contract running
+on the Ethereum Sepolia testnet, making sure your infrastructure and node are monitored
+properly with Grafana and alerted upon with Alertmanager.
+
+## Requirements
+
+- Set up a Chainlink node that communicates with the Ethereum Sepolia testnet
+- Use an appropriate blockchain wallet (eg Metamask) to deploy a smart contract on the
+testnet, which can then be paid 1 testnet LINK payment to request the latest ETH/USD
+price from your Chainlink node. The Chainlink node should reply with a transaction to
+fulfill the request.
+- Create a Grafana dashboard to monitor the following:
+◦ % HDD usage of VM
+◦ Chainlink node's account balance
+- Set up an Alertmanager alert rule to send an email when the Chainlink node's balance
+goes below 0.5 ETH (the email settings may be dummy data)
+- Use docker-compose to deploy all the required service
+
+# Installation
 ### Docker
 #### Uninstall old versions
 
