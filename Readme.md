@@ -21,8 +21,8 @@ testnet, which can then be paid 1 testnet LINK payment to request the latest ETH
 price from your Chainlink node. The Chainlink node should reply with a transaction to
 fulfill the request.
 - Create a Grafana dashboard to monitor the following:
-◦ % HDD usage of VM
-◦ Chainlink node's account balance
+-- % HDD usage of VM
+-- Chainlink node's account balance
 - Set up an Alertmanager alert rule to send an email when the Chainlink node's balance
 goes below 0.5 ETH (the email settings may be dummy data)
 - Use docker-compose to deploy all the required service
